@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (greetingBubble) {
         const hour = new Date().getHours();
         let greeting;
-        if (hour < 12) {
+        if (hour >= 1 && hour < 12) {
             greeting = 'Good Morning!';
-        } else if (hour < 18) {
+        } else if (hour < 16) {
             greeting = 'Good Afternoon!';
         } else {
             greeting = 'Good Evening!';
         }
-        greetingBubble.textContent = greeting;
+        greetingBubble.textContent = `Hello, ${greeting}`;
     }
 
     // --- Dark/Light Theme Switcher ---
