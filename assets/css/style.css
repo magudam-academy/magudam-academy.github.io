@@ -550,16 +550,42 @@ html.dark-theme .cta-button {
     text-align: center;
 }
 
+.about-inner-content {
+    position: relative;
+    margin-left: 65px;
+}
+
+.about-quote {
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    left: -65px;
+    top: -25px;
+}
+.about-quote img {
+    width: 100%;
+    height: 100%;
+}
+.dark-theme .about-quote img {
+    opacity: 0.2;
+}
+
 .founder-profile {
     position: relative;
 }
 
 .founder-profile-wrapper {
-    max-height: 375px;
+    max-height: 250px;
     margin-bottom: 20px;
     position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 769px) {
+    .founder-profile-wrapper {
+        max-height: 350px;
+    }
 }
 
 .founder-profile img {
@@ -1626,7 +1652,7 @@ html.dark-theme #scroll-to-top-btn {
     .about-content .section-title,
     .about-content .section-subtitle {
         text-align: center;
-    }
+    }  
 
     #why-us .section-title,
     #why-us .section-subtitle {
